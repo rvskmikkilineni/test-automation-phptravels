@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="12" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="13" time="873.546168">
+<testcase classname="PHP Travels HOME PAGE functionality" name="Validation of flight booking search fields" time="72.998434">
+<failure message="junit.framework.AssertionFailedError: ERROR:System navigated to result page&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at cloud.travels.pages.home.HomePage.search_ResulsPage(HomePage.java:345)&#13;&#10;&#9;at cloud.travels.steps.home.HomeSteps.i_can_verify_the_system_is_navigated_to_results_page_or_not(HomeSteps.java:74)&#13;&#10;&#9;at ✽.Then I can verify the system is navigated to results page or not(src/test/resources/features/homePage.feature:23)&#13;&#10;"><![CDATA[Given I am on Home page of PHP Travels......................................passed
+When I click on round trip and check the return date is populated or not....passed
+And I click on oneway and check the return date is disappeared or not.......passed
+And I check the default class name..........................................passed
+And I modify the class name.................................................passed
+And I enter from and to cities..............................................passed
+And I try to search for previous date in departure date picker..............passed
+And I search for current date in departure date picker......................passed
+And I enter the number of passengers........................................passed
+Then I can verify the system is navigated to results page or not............failed
+
+StackTrace:
+junit.framework.AssertionFailedError: ERROR:System navigated to result page
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at cloud.travels.pages.home.HomePage.search_ResulsPage(HomePage.java:345)
+	at cloud.travels.steps.home.HomeSteps.i_can_verify_the_system_is_navigated_to_results_page_or_not(HomeSteps.java:74)
+	at ✽.Then I can verify the system is navigated to results page or not(src/test/resources/features/homePage.feature:23)
+]]></failure>
+</testcase>
+<testcase classname="PHP Travels HOME PAGE functionality" name="Validate infants count more than Adults count" time="69.258946">
+<failure message="junit.framework.AssertionFailedError: ERROR:System navigated to result page&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at cloud.travels.pages.home.HomePage.search_ResulsPage(HomePage.java:345)&#13;&#10;&#9;at cloud.travels.steps.home.HomeSteps.i_can_verify_the_system_is_navigated_to_results_page_or_not(HomeSteps.java:74)&#13;&#10;&#9;at ✽.Then I can verify the system is navigated to results page or not(src/test/resources/features/homePage.feature:41)&#13;&#10;"><![CDATA[Given I am on Home page of PHP Travels......................................passed
+When I check oneway is selected or not......................................passed
+And I modify the class name.................................................passed
+And I enter from and to cities..............................................passed
+And I search for current date in departure date picker......................passed
+And I enter the number of passengers........................................passed
+Then I can verify the system is navigated to results page or not............failed
+
+StackTrace:
+junit.framework.AssertionFailedError: ERROR:System navigated to result page
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at cloud.travels.pages.home.HomePage.search_ResulsPage(HomePage.java:345)
+	at cloud.travels.steps.home.HomeSteps.i_can_verify_the_system_is_navigated_to_results_page_or_not(HomeSteps.java:74)
+	at ✽.Then I can verify the system is navigated to results page or not(src/test/resources/features/homePage.feature:41)
+]]></failure>
+</testcase>
+<testcase classname="PHP Travels HOME PAGE functionality" name="Validate the Return date as Blank" time="60.899506">
+<failure message="junit.framework.AssertionFailedError: ERROR:System navigated to result page&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at cloud.travels.pages.home.HomePage.search_ResulsPage(HomePage.java:345)&#13;&#10;&#9;at cloud.travels.steps.home.HomeSteps.i_can_verify_the_system_is_navigated_to_results_page_or_not(HomeSteps.java:74)&#13;&#10;&#9;at ✽.Then I can verify the system is navigated to results page or not(src/test/resources/features/homePage.feature:59)&#13;&#10;"><![CDATA[Given I am on Home page of PHP Travels......................................passed
+When I select Round Trip....................................................passed
+And I modify the class name.................................................passed
+And I enter from and to cities..............................................passed
+And I search for current date in departure date picker......................passed
+And I enter the number of passengers........................................passed
+Then I can verify the system is navigated to results page or not............failed
+
+StackTrace:
+junit.framework.AssertionFailedError: ERROR:System navigated to result page
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at cloud.travels.pages.home.HomePage.search_ResulsPage(HomePage.java:345)
+	at cloud.travels.steps.home.HomeSteps.i_can_verify_the_system_is_navigated_to_results_page_or_not(HomeSteps.java:74)
+	at ✽.Then I can verify the system is navigated to results page or not(src/test/resources/features/homePage.feature:59)
+]]></failure>
+</testcase>
+<testcase classname="PHP Travels HOME PAGE functionality" name="verify the system is navigated to results page" time="68.491502">
+<system-out><![CDATA[Given I am on Home page of PHP Travels......................................passed
+When I check oneway is selected or not......................................passed
+And I modify the class name.................................................passed
+And I enter from and to cities..............................................passed
+And I search for current date in departure date picker......................passed
+And I enter the number of passengers........................................passed
+Then I can verify the system is navigated to results page...................passed
+]]></system-out>
+</testcase>
+<testcase classname="PHP Travels HOME PAGE functionality" name="Validate the default class in Home page and modify search page" time="73.544088">
+<failure message="cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'cloud.travels.steps.home.HomeSteps.i_can_check_the_default_class_name_in_homepage_and_modify_search_page(DataTable) in file:/C:/Users/sivam/Downloads/test-automation-travels/target/test-classes/' with pattern [^I can check the default class name in Home page and modify search page$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. &#10;Step: And I can check the default class name in Home page and modify search page&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:128)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:27)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:128)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:27)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;&#10;"><![CDATA[Given I am on Home page of PHP Travels......................................passed
+When I check oneway is selected or not......................................passed
+And I modify the class name.................................................passed
+And I enter from and to cities..............................................passed
+And I search for current date in departure date picker......................passed
+And I enter the number of passengers........................................passed
+Then I can verify the system is navigated to results page...................passed
+And I can check the default class name in Home page and modify search page..failed
+
+StackTrace:
+cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'cloud.travels.steps.home.HomeSteps.i_can_check_the_default_class_name_in_homepage_and_modify_search_page(DataTable) in file:/C:/Users/sivam/Downloads/test-automation-travels/target/test-classes/' with pattern [^I can check the default class name in Home page and modify search page$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. 
+Step: And I can check the default class name in Home page and modify search page
+	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)
+	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+]]></failure>
+</testcase>
+<testcase classname="PHP Travels HOME PAGE functionality" name="Validate the passengers count in Home page and modify search page" time="68.063634">
+<failure message="junit.framework.AssertionFailedError: ADULT: Home page Adults Count and Modify search Page Adults Count Both Are Not Matching&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at cloud.travels.pages.home.HomePage.checkingPassengersCount_ModifySearchPage(HomePage.java:443)&#13;&#10;&#9;at cloud.travels.steps.home.HomeSteps.i_can_check_the_passenger_count_in_homepage_and_modify_search_page(HomeSteps.java:110)&#13;&#10;&#9;at ✽.And I can check the passengers count in Home page and modify search page(src/test/resources/features/homePage.feature:115)&#13;&#10;"><![CDATA[Given I am on Home page of PHP Travels......................................passed
+When I check oneway is selected or not......................................passed
+And I modify the class name.................................................passed
+And I enter from and to cities..............................................passed
+And I search for current date in departure date picker......................passed
+And I enter the number of passengers........................................passed
+Then I can verify the system is navigated to results page...................passed
+And I can check the passengers count in Home page and modify search page....failed
+
+StackTrace:
+junit.framework.AssertionFailedError: ADULT: Home page Adults Count and Modify search Page Adults Count Both Are Not Matching
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at cloud.travels.pages.home.HomePage.checkingPassengersCount_ModifySearchPage(HomePage.java:443)
+	at cloud.travels.steps.home.HomeSteps.i_can_check_the_passenger_count_in_homepage_and_modify_search_page(HomeSteps.java:110)
+	at ✽.And I can check the passengers count in Home page and modify search page(src/test/resources/features/homePage.feature:115)
+]]></failure>
+</testcase>
+<testcase classname="PHP Travels HOME PAGE functionality" name="Validate the start time end time which shows same for the two trips" time="68.312118">
+<failure message="junit.framework.AssertionFailedError: ERROR: Start Time and End Time showing same for both the trips&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at cloud.travels.pages.home.HomePage.selectStopOne_CheckStartTimeAndEndTime(HomePage.java:577)&#13;&#10;&#9;at cloud.travels.steps.home.HomeSteps.i_can_check_start_time_end_time_shows_same_for_both_trips(HomeSteps.java:116)&#13;&#10;&#9;at ✽.And I can Check the Start time end time which shows same for the two trips(src/test/resources/features/homePage.feature:136)&#13;&#10;"><![CDATA[Given I am on Home page of PHP Travels......................................passed
+When I check oneway is selected or not......................................passed
+And I modify the class name.................................................passed
+And I enter from and to cities..............................................passed
+And I search for current date in departure date picker......................passed
+And I enter the number of passengers........................................passed
+Then I can verify the system is navigated to results page...................passed
+And I can Check the Start time end time which shows same for the two trips..failed
+
+StackTrace:
+junit.framework.AssertionFailedError: ERROR: Start Time and End Time showing same for both the trips
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at cloud.travels.pages.home.HomePage.selectStopOne_CheckStartTimeAndEndTime(HomePage.java:577)
+	at cloud.travels.steps.home.HomeSteps.i_can_check_start_time_end_time_shows_same_for_both_trips(HomeSteps.java:116)
+	at ✽.And I can Check the Start time end time which shows same for the two trips(src/test/resources/features/homePage.feature:136)
+]]></failure>
+</testcase>
+<testcase classname="PHP Travels HOME PAGE functionality" name="Validate the duration for both the trips" time="65.253828">
+<failure message="junit.framework.AssertionFailedError: ERROR: Start Duration and End Duration showing same for both the trips&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at cloud.travels.pages.home.HomePage.selectStopOne_CheckDurationTrips(HomePage.java:498)&#13;&#10;&#9;at cloud.travels.steps.home.HomeSteps.i_can_check_duration_shows_same_for_both_trips(HomeSteps.java:122)&#13;&#10;&#9;at ✽.And I can check the duration which is showing same for both the trips(src/test/resources/features/homePage.feature:154)&#13;&#10;"><![CDATA[Given I am on Home page of PHP Travels......................................passed
+When I check oneway is selected or not......................................passed
+And I modify the class name.................................................passed
+And I enter from and to cities..............................................passed
+And I search for current date in departure date picker......................passed
+And I enter the number of passengers........................................passed
+Then I can verify the system is navigated to results page...................passed
+And I can check the duration which is showing same for both the trips.......failed
+
+StackTrace:
+junit.framework.AssertionFailedError: ERROR: Start Duration and End Duration showing same for both the trips
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at cloud.travels.pages.home.HomePage.selectStopOne_CheckDurationTrips(HomePage.java:498)
+	at cloud.travels.steps.home.HomeSteps.i_can_check_duration_shows_same_for_both_trips(HomeSteps.java:122)
+	at ✽.And I can check the duration which is showing same for both the trips(src/test/resources/features/homePage.feature:154)
+]]></failure>
+</testcase>
+<testcase classname="PHP Travels HOME PAGE functionality" name="Validate the start time end time which shows same for the two trips" time="68.231175">
+<failure message="junit.framework.AssertionFailedError: ERROR: Start Time showing Depart From Start Locations&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at cloud.travels.pages.home.HomePage.selectStopOne_CheckStartTimeShowingDepartFromStartLocations(HomePage.java:537)&#13;&#10;&#9;at cloud.travels.steps.home.HomeSteps.i_can_check_start_time_is_showing_in_depart_from_start_locations(HomeSteps.java:128)&#13;&#10;&#9;at ✽.And I can check Start time is showing same in Depart from Start location(src/test/resources/features/homePage.feature:173)&#13;&#10;"><![CDATA[Given I am on Home page of PHP Travels......................................passed
+When I check oneway is selected or not......................................passed
+And I modify the class name.................................................passed
+And I enter from and to cities..............................................passed
+And I search for current date in departure date picker......................passed
+And I enter the number of passengers........................................passed
+And I can verify the system is navigated to results page....................passed
+And I can check Start time is showing same in Depart from Start location....failed
+
+StackTrace:
+junit.framework.AssertionFailedError: ERROR: Start Time showing Depart From Start Locations
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at cloud.travels.pages.home.HomePage.selectStopOne_CheckStartTimeShowingDepartFromStartLocations(HomePage.java:537)
+	at cloud.travels.steps.home.HomeSteps.i_can_check_start_time_is_showing_in_depart_from_start_locations(HomeSteps.java:128)
+	at ✽.And I can check Start time is showing same in Depart from Start location(src/test/resources/features/homePage.feature:173)
+]]></failure>
+</testcase>
+<testcase classname="PHP Travels HOME PAGE functionality" name="Validate the from time in SRP page and Booking Summary Page" time="80.784292">
+<failure message="junit.framework.AssertionFailedError: SRP PAGE START TIME AND BOOKING SUMMARY PAGE START TIME BOTH ARE NOT MATCHING&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at cloud.travels.pages.home.HomePage.checking_FromTime_BookingSummaryPage(HomePage.java:621)&#13;&#10;&#9;at cloud.travels.steps.home.HomeSteps.i_can_verify_the_from_time_in_Srp_page_and_booking_summary_page(HomeSteps.java:134)&#13;&#10;&#9;at ✽.And I can verify the from time in SRP page and Booking Summary Page(src/test/resources/features/homePage.feature:191)&#13;&#10;"><![CDATA[Given I am on Home page of PHP Travels......................................passed
+When I check oneway is selected or not......................................passed
+And I modify the class name.................................................passed
+And I enter from and to cities..............................................passed
+And I search for current date in departure date picker......................passed
+And I enter the number of passengers........................................passed
+Then I can verify the system is navigated to results page...................passed
+And I can verify the from time in SRP page and Booking Summary Page.........failed
+
+StackTrace:
+junit.framework.AssertionFailedError: SRP PAGE START TIME AND BOOKING SUMMARY PAGE START TIME BOTH ARE NOT MATCHING
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at cloud.travels.pages.home.HomePage.checking_FromTime_BookingSummaryPage(HomePage.java:621)
+	at cloud.travels.steps.home.HomeSteps.i_can_verify_the_from_time_in_Srp_page_and_booking_summary_page(HomeSteps.java:134)
+	at ✽.And I can verify the from time in SRP page and Booking Summary Page(src/test/resources/features/homePage.feature:191)
+]]></failure>
+</testcase>
+<testcase classname="PHP Travels HOME PAGE functionality" name="Validate the Currency in SRP page and Booking Summary Page" time="72.274981">
+<failure message="junit.framework.AssertionFailedError: SRP PAGE CURRENCY AND BOOKING SUMMARY PAGE CURRENCY BOTH ARE NOT MATCHING&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at cloud.travels.pages.home.HomePage.checking_Currency_BookingSummaryPage(HomePage.java:665)&#13;&#10;&#9;at cloud.travels.steps.home.HomeSteps.i_can_verify_the_currency_in_Srp_page_and_booking_summary_page(HomeSteps.java:140)&#13;&#10;&#9;at ✽.And I can verify the Currency in SRP page and Booking Summary Page(src/test/resources/features/homePage.feature:209)&#13;&#10;"><![CDATA[Given I am on Home page of PHP Travels......................................passed
+When I check oneway is selected or not......................................passed
+And I modify the class name.................................................passed
+And I enter from and to cities..............................................passed
+And I search for current date in departure date picker......................passed
+And I enter the number of passengers........................................passed
+Then I can verify the system is navigated to results page...................passed
+And I can verify the Currency in SRP page and Booking Summary Page..........failed
+
+StackTrace:
+junit.framework.AssertionFailedError: SRP PAGE CURRENCY AND BOOKING SUMMARY PAGE CURRENCY BOTH ARE NOT MATCHING
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at cloud.travels.pages.home.HomePage.checking_Currency_BookingSummaryPage(HomePage.java:665)
+	at cloud.travels.steps.home.HomeSteps.i_can_verify_the_currency_in_Srp_page_and_booking_summary_page(HomeSteps.java:140)
+	at ✽.And I can verify the Currency in SRP page and Booking Summary Page(src/test/resources/features/homePage.feature:209)
+]]></failure>
+</testcase>
+<testcase classname="PHP Travels HOME PAGE functionality" name="Validate the Currency in SRP page and Booking Summary Page 2" time="27.668305">
+<failure message="org.openqa.selenium.WebDriverException: unknown error: Element &lt;button style=&quot;font-size: 16px;&quot; type=&quot;submit&quot; class=&quot;btn btn-primary btn-lg btn-block loginbtn&quot;&gt;...&lt;/button&gt; is not clickable at point (631, 521). Other element would receive the click: &lt;a aria-label=&quot;learn more about cookies&quot; role=&quot;button&quot; tabindex=&quot;0&quot; class=&quot;cc-link&quot; href=&quot;https://www.phptravels.net/cookies-policy&quot; rel=&quot;noopener noreferrer nofollow&quot; target=&quot;_blank&quot;&gt;...&lt;/a&gt;&#10;  (Session info: chrome=78.0.3904.97)&#10;  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'&#10;System info: host: 'SIVAM-LP', ip: '192.168.3.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\sivam\AppData\Local\Temp\scoped_dir9652_23840}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.97, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: f15375e4f721d74509f902fe36d1f44e&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)&#13;&#10;&#9;at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at com.sun.proxy.$Proxy18.click(Unknown Source)&#13;&#10;&#9;at cloud.travels.utils.PageUtils.clickElement(PageUtils.java:58)&#13;&#10;&#9;at cloud.travels.pages.login.LoginPage.Login(LoginPage.java:228)&#13;&#10;&#9;at cloud.travels.steps.login.LoginSteps.i_login_to_AUT_with_valid_user_credentials(LoginSteps.java:61)&#13;&#10;&#9;at ✽.When I login to AUT with valid user credentials(src/test/resources/features/homePage.feature:218)&#13;&#10;"><![CDATA[Given I am on Home page of PHP Travels......................................passed
+When I login to AUT with valid user credentials.............................failed
+And I check oneway is selected or not.......................................skipped
+And I modify the class name.................................................skipped
+And I enter from and to cities..............................................skipped
+And I search for current date in departure date picker......................skipped
+And I enter the number of passengers........................................skipped
+Then I can verify the system is navigated to results page...................skipped
+And I can login to the site and navigate to booking summary page and Verify Account Login.skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: Element <button style="font-size: 16px;" type="submit" class="btn btn-primary btn-lg btn-block loginbtn">...</button> is not clickable at point (631, 521). Other element would receive the click: <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.phptravels.net/cookies-policy" rel="noopener noreferrer nofollow" target="_blank">...</a>
+  (Session info: chrome=78.0.3904.97)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'SIVAM-LP', ip: '192.168.3.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\sivam\AppData\Local\Temp\scoped_dir9652_23840}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.97, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f15375e4f721d74509f902fe36d1f44e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at cloud.travels.utils.PageUtils.clickElement(PageUtils.java:58)
+	at cloud.travels.pages.login.LoginPage.Login(LoginPage.java:228)
+	at cloud.travels.steps.login.LoginSteps.i_login_to_AUT_with_valid_user_credentials(LoginSteps.java:61)
+	at ✽.When I login to AUT with valid user credentials(src/test/resources/features/homePage.feature:218)
+]]></failure>
+</testcase>
+<testcase classname="PHP Travels HOME PAGE functionality" name="Validate the Payment Cards in Booking Summary Page" time="77.765359">
+<failure message="junit.framework.AssertionFailedError: Only Creadit Card Is Displayed&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at cloud.travels.pages.home.HomePage.verifyPaymentCards(HomePage.java:734)&#13;&#10;&#9;at cloud.travels.steps.home.HomeSteps.i_can_check_the_payment_cards(HomeSteps.java:152)&#13;&#10;&#9;at ✽.And I can check the payment cards(src/test/resources/features/homePage.feature:247)&#13;&#10;"><![CDATA[Given I am on Home page of PHP Travels......................................passed
+When I check oneway is selected or not......................................passed
+And I modify the class name.................................................passed
+And I enter from and to cities..............................................passed
+And I search for current date in departure date picker......................passed
+And I enter the number of passengers........................................passed
+Then I can verify the system is navigated to results page...................passed
+And I can check the payment cards...........................................failed
+
+StackTrace:
+junit.framework.AssertionFailedError: Only Creadit Card Is Displayed
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at cloud.travels.pages.home.HomePage.verifyPaymentCards(HomePage.java:734)
+	at cloud.travels.steps.home.HomeSteps.i_can_check_the_payment_cards(HomeSteps.java:152)
+	at ✽.And I can check the payment cards(src/test/resources/features/homePage.feature:247)
+]]></failure>
+</testcase>
+</testsuite>
