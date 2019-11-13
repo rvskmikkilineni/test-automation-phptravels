@@ -101,7 +101,7 @@ Scenario Outline: Validate the default class selected in Home page and check for
 	 
 	 
 @healthcheck
-Scenario Outline: Validate the passengers count selected in Home page and check for the same count in modify search page
+Scenario Outline: Validate the passengers count selected in Home page and check for the count in modify search page
 	 When I check oneway is selected or not
 	 And I modify the class name
 	 	|className|<className>|
@@ -177,7 +177,7 @@ Scenario Outline: Validate the start time which shows same for the flights with 
 	 |First |1		|0		|0		|
 	 
 @healthcheck
-Scenario Outline: Validate the start time displayed in SRP page and compare against the start time Booking Summary Page
+Scenario Outline: Validate the start time displayed in SRP page and compare against the start time in Booking Summary Page
 	 When I check oneway is selected or not
 	 And I modify the class name
 	 	|className|<className>|
@@ -195,7 +195,7 @@ Scenario Outline: Validate the start time displayed in SRP page and compare agai
 	 |First |1		|0		|0		|
 	 
 @healthcheck
-Scenario Outline: Validate the currency displayed in SRP page and check for the currency in Booking Summary Page
+Scenario Outline: Validate the currency displayed in SRP page and check for the same currency in Booking Summary Page
 	 When I check oneway is selected or not
 	 And I modify the class name
 	 	|className|<className>|
@@ -214,7 +214,7 @@ Scenario Outline: Validate the currency displayed in SRP page and check for the 
 	 
 	 
 @healthcheck
-Scenario Outline: Validate the Booking summary page for a user who is logged in
+Scenario Outline: Validate the Booking summary page for the user who is already logged in
      When I login to AUT with valid user credentials
 	 And I check oneway is selected or not
 	 And I modify the class name

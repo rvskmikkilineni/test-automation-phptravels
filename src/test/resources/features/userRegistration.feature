@@ -17,7 +17,7 @@ Scenario: Validate the user is navigated to user profile page and check the deta
 	 Then I can logout of the Account
 
 @healthcheck
-Scenario: Validate the fields with same data from existing register user and check the error message
+Scenario: Validate the error message when user tries to register with same data from existing registered user
 	 When I click on Myaccount and signUp buttons
 	 And I provide all the fields with same data from previous register user 
 	 Then I can see the error message
