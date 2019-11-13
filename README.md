@@ -50,12 +50,12 @@ I have used Zalenium Grid to run multiple tests across different browser instanc
 		docker pull elgalu/selenium
 		docker pull dosel/zalenium
 		**Above commands take approximately 5 to 10 min of time
-3. Then execute below zalenium commands, copy all the below 5 commands at once and paste in same command prompt
-		docker run --rm -ti --name zalenium -p 4444:4444 ^
-		-v /var/run/docker.sock:/var/run/docker.sock ^
-		-v /tmp/videos:/home/seluser/videos  ^
-		--privileged dosel/zalenium start --timeZone "Asia/Kolkata" ^
-		--chromeContainers 5 --firefoxContainers 4 --videoRecordingEnabled true --maxDockerSeleniumContainers 5 --maxTestSessions 20
+3. Then execute below zalenium commands, copy all the below 5 commands at once and paste in same command prompt.
+		a. docker run --rm -ti --name zalenium -p 4444:4444 ^
+		b. -v /var/run/docker.sock:/var/run/docker.sock ^
+		c. -v /tmp/videos:/home/seluser/videos  ^
+		d. --privileged dosel/zalenium start --timeZone "Asia/Kolkata" ^
+		e. --chromeContainers 5 --firefoxContainers 4 --videoRecordingEnabled true --maxDockerSeleniumContainers 5 --maxTestSessions 20
 		**Above 5 commands take approximately 5 min of time
 4. Open Chrome browser and enter below Zalenium URL
 		http://localhost:4444/grid/admin/live#
