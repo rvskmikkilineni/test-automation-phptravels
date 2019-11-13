@@ -35,7 +35,7 @@ import cucumber.api.java.Before;
 public class BrowserUtils {
 	public static WebDriver driver = null;
 	public static String applicationUrl = null;
-	public static String engineEnvironment = null;
+	//public static String engineEnvironment = null;
 
 	/**
 	 * This method is used to return the browser instance
@@ -155,19 +155,19 @@ public class BrowserUtils {
 			// applicationUrl = System.getProperty("url");
 			switch (environment) {
 			case "PRD":
-				engineEnvironment = BrowserConstants.ENV_DEV;
+				//engineEnvironment = BrowserConstants.ENV_DEV;
 				applicationUrl = BrowserConstants.PHP_PRD_URL;
 				break;
 			case "TST":
-				engineEnvironment = BrowserConstants.ENV_TST;
+				//engineEnvironment = BrowserConstants.ENV_TST;
 				applicationUrl = BrowserConstants.PHP_QA_TST_URL;
 				break;
 			case "STG":
-				engineEnvironment = BrowserConstants.ENV_STG;
+				//engineEnvironment = BrowserConstants.ENV_STG;
 				applicationUrl = BrowserConstants.PHP_STG_URL;
 				break;
 			default:
-				applicationUrl = BrowserConstants.PHP_PRD_URL;
+				applicationUrl = BrowserConstants.PHP_QA_TST_URL;
 				break;
 			}
 			break;

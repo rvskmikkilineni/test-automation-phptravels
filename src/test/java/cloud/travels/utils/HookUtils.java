@@ -18,13 +18,9 @@ public class HookUtils {
 	public void cleanUp(Scenario scenario) throws IOException {
 		Cookie cookie = new Cookie("zaleniumTestPassed", scenario.isFailed() ? "false" : "true");
 		BrowserUtils.driver.manage().addCookie(cookie);
-
 		scenario.embed(((TakesScreenshot) BrowserUtils.driver).getScreenshotAs(OutputType.BYTES), "image/png");
-
 		try {
-
 		} catch (Exception e) {
-
 		} finally {
 			BrowserUtils.driver.close();
 			BrowserUtils.driver.quit();
