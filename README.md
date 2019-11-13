@@ -5,7 +5,7 @@ Reason to use Selenium with Cucumber:
 
 Cucumber is a testing approach (or a Framework) which supports Behavior Driven Development (BDD). It explains the behavior of the application in a simple English text using Gherkin language. BDD is useful for communicating with every member of a cross-functional product team and sharing expected behaviors across all members of the team. 
 
-I felt this would be better approach for building the automation framework. As mentioned above, anyone from project team can simply understand each and every automation test without a need of looking at the code.
+I felt this would be better approach for building the automation framework. As mentioned above, anyone from project team can simply understand each automation test without a need of looking at the code.
 
 Tools & Versions Used:-
 -----------------------------
@@ -29,8 +29,8 @@ Steps/Process to execute:
 		features ={"src/test/resources/features/homePage.feature"} [or]
 		features ={"src/test/resources/features/loginPage.feature"} [or]
 		features ={"src/test/resources/features/userRegistration.feature"}
-5. All the scenarios inside each feature file has a tag (@healthcheck), this is to execute specific tests with tag name as @heathcheck
-6. If needed to execute any specific test add any unique tag (Ex: @healthcheck1) for that partuclar scenario in feature file and mention the same in runner file as below. This time only the scripts with tag name as @healthcheck1 will get executed.
+5. All the scenarios inside each feature file has a tag (@healthcheck), this is to execute specific tests with tag name as @healthcheck
+6. If needed to execute any specific test, add any unique tag (Ex: @healthcheck1) for that scenario in feature file and mention the same in runner file as below. This time only the scripts with tag name as @healthcheck1 will get executed.
 		tags = {"@healthcheck1"}
 7. By default the script runs on chrome browser, if needed to change the browser, place the respective driver.exe file under drivers folder and update below code in runner file.
 		System.setProperty("browser", System.getProperty("browser", "chrome"));
@@ -46,7 +46,7 @@ Steps/Process to execute on Zelenium Grid:
 I have used Zalenium Grid to run multiple tests across different browser instances at once and this needs docker to be installed
 
 1. Install docker for windows
-2. Go to docker workspace(Ex:C:\Program Files\Docker\Docker\resources\bin) and excute below two commands in command prompt.
+2. Go to docker workspace(Ex:C:\Program Files\Docker\Docker\resources\bin) and execute below two commands in command prompt.
 		docker pull elgalu/selenium
 		docker pull dosel/zalenium
 		**Above commands take approximately 5 to 10 min of time
@@ -68,5 +68,5 @@ Issues faced while developing scripts and execution:
 ----------------------------------------------------
 
 1. Most of the times the AUT is unresponsive or takes very long time to get up and running.
-2. Some times 'Page Not Found' screen appears and couldn't do any work till it gets back.
-3. The chat window that automatically pops up on homepage sometimes doesn't open at all and manytimes it opens immediately after opening the page and fewtimes it opens somewhere in the middle of our scenario which has thrown challenges in handling this. As of now, due to time constraint this popup is handled only if it pops up immediately after opening the home page.
+2. Sometimes 'Page Not Found' screen appears and couldn't do any work till it gets back.
+3. The chat window that automatically pops up on homepage sometimes doesn't open at all and many a times it opens immediately after opening the page and few times it opens somewhere in the middle of our scenario which has thrown challenges in handling this. As of now, due to time constraint this popup is handled only if it pops up immediately after opening the home page.
