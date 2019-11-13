@@ -64,7 +64,7 @@ Scenario Outline: Validate the round trip booking scenario when return date is B
 	 
 	 
 @healthcheck
-Scenario Outline: verify the flight booking scenario with all valid search data
+Scenario Outline: Validate the flight booking scenario with all valid search data
 	 When I check oneway is selected or not
 	 And I modify the class name
 	 	|className|<className>|
@@ -81,7 +81,7 @@ Scenario Outline: verify the flight booking scenario with all valid search data
 	 |Business |4		|5		|0		|
 	 
 	 
-@healthcheck no prameter in last step issue
+@healthcheck
 Scenario Outline: Validate the default class selected in Home page and check for the same class in modify search page
 	 When I check oneway is selected or not
 	 And I modify the class name
@@ -94,7 +94,7 @@ Scenario Outline: Validate the default class selected in Home page and check for
 	   	|Infants|<Infants>|
 	 Then I can verify the system is navigated to results page
 	 And I can check the default class name in Home page and modify search page
-	 
+	 	|className|<className>|
 	 Examples:
 	 |className|Adults	|Childs	|Infants|
 	 |First |4		|2		|3		|
@@ -158,8 +158,8 @@ Scenario Outline: Validate the total duration showing for the flights with more 
 	 |First |1		|0		|0		|
 	 
 	 
-@healthcheck what is the diff with above and this scenario ?
-Scenario Outline: Validate the start time and end time which shows same for the flights with more than 1 stop
+@healthcheck
+Scenario Outline: Validate the start time which shows same for the flights with more than 1 stop in depart window
 	 When I check oneway is selected or not
 	 And I modify the class name
 	 	|className|<className>|
@@ -213,8 +213,8 @@ Scenario Outline: Validate the currency displayed in SRP page and check for the 
 	 |First |1		|0		|0		|
 	 
 	 
-@healthcheck diff in aboave and this ?
-Scenario Outline: Validate the currency displayed in SRP page and check for the currency in Booking Summary Page
+@healthcheck
+Scenario Outline: Validate the Booking summary page for a user who is logged in
      When I login to AUT with valid user credentials
 	 And I check oneway is selected or not
 	 And I modify the class name

@@ -1,22 +1,4 @@
 package cloud.travels.runner;
-/*import org.junit.runner.RunWith;
-
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-//import cucumber.api.testng.AbstractTestNGCucumberTests;
-
-@RunWith(Cucumber.class)
-@CucumberOptions(
-		features = "src/test/resources/features/CheckOut.feature",
-		tags = {"@hf-check"},
-		//plugin = {"pretty", "html:target/cucumber-reports"}
-				plugin = {"pretty", "html:target/site/cucumber-pretty&quot"}
-		
-)
-//public class CheckoutRunner extends AbstractTestNGCucumberTests {
-	public class CheckoutRunner{
-}*/
-
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
  
@@ -25,7 +7,7 @@ import cucumber.api.junit.Cucumber;
  
 @RunWith(Cucumber.class)
 @CucumberOptions(strict = true,
-    features = {"src/test/resources/features/home.feature"},
+    features = {"src/test/resources/features"},
    
     		format = { "pretty", "html:Reports/cukes", "json:Reports/cukes/cucumber.json",
 	"junit:Reports/cukes/junit.xml" },

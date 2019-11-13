@@ -104,7 +104,7 @@ public class HomePage {
 	 * @throws InterruptedException
 	 */
 	public void clickAccept() throws InterruptedException {
-		//frames();
+		frames();
 		pageUtils.scrollDownSmall(driver);
 		pageUtils.waitForFixedTime(BrowserConstants.WAIT_SMALL);
 		pageUtils.clickElement(driver, btn_Accept);
@@ -363,11 +363,11 @@ public class HomePage {
 		String results = pageUtils.getTextOfElement(driver, get_Results_Text);
 		System.out.println("Results Text:" + results);
 		if (StringUtils.isEmpty(results)) {
-			System.out.println("ERROR:System shouldn't get navigated to result page");
-			Assert.assertTrue("ERROR:System shouldn't get navigated to result page", status);
+			System.out.println("ERROR: System shouldn't get navigated to results page");
+			Assert.assertTrue("ERROR: System shouldn't get navigated to results page", status);
 			status = false;
 		} else {
-			System.out.println("SUCCESS:System navigated to result page");
+			System.out.println("SUCCESS: System navigated to results page");
 			status = true;
 		}
 		return status;
@@ -514,7 +514,6 @@ public class HomePage {
 	 * @throws InterruptedException
 	 */
 	public boolean selectStopOne_CheckStartTimeShowingDepartFromStartLocations() throws InterruptedException {
-
 		boolean status = false;
 		for (int i = 1; i <= stops_List.size(); i++) {
 			if (driver
@@ -552,7 +551,6 @@ public class HomePage {
 	 * @throws InterruptedException
 	 */
 	public boolean selectStopOne_CheckStartTimeAndEndTime() throws InterruptedException {
-
 		boolean status = false;
 		for (int i = 1; i <= stops_List.size(); i++) {
 			if (driver
@@ -560,19 +558,18 @@ public class HomePage {
 							+ "]/div/div/div/form/div/div/div/div/div/div/div/div[2]/div//strong"))
 					.getText().equals("Stops 1")) {
 				driver.findElement(By.xpath("//ul[@id='LIST']/li[" + i + "]/div/div/div")).click();
+				pageUtils.scrollDownSmall(driver);
 				pageUtils.waitForFixedTime(BrowserConstants.WAIT_SMALL_TWO);
 				String startDepTime = driver.findElement(By.xpath("//ul[@id='LIST']/li[" + i
 						+ "]/div/div[2]/div/div[2]/div/div/div/div[2]/div/ul/li/div[2]/span")).getText();
 				String endDepTime = driver.findElement(By.xpath("//ul[@id='LIST']/li[" + i
 						+ "]/div/div[2]/div/div[2]/div/div/div/div[2]/div/ul/li/div[2]/span[3]")).getText();
-
-				String arraDepTime = driver.findElement(By.xpath("//ul[@id='LIST']/li[" + i
+				String arrDepTime = driver.findElement(By.xpath("//ul[@id='LIST']/li[" + i
 						+ "]/div/div[2]/div/div[3]/div/div/div/div[2]/div/ul/li/div[2]/span")).getText();
-				String arraEndTime = driver.findElement(By.xpath("//ul[@id='LIST']/li[" + i
+				String arrEndTime = driver.findElement(By.xpath("//ul[@id='LIST']/li[" + i
 						+ "]/div/div[2]/div/div[3]/div/div/div/div[2]/div/ul/li/div[2]/span[3]")).getText();
-
-				if (startDepTime.equals(arraDepTime)) {
-					if (endDepTime.equals(arraEndTime)) {
+				if (startDepTime.equals(arrDepTime)) {
+					if (endDepTime.equals(arrEndTime)) {
 						System.out.println("Start Time and End Time showing same for both the trips");
 						Assert.assertTrue("ERROR: Start Time and End Time showing same for both the trips", status);
 						status = false;
@@ -602,6 +599,7 @@ public class HomePage {
 					.getText().equals("Stops 1")) {
 				driver.findElement(By.xpath("//ul[@id='LIST']/li[" + i + "]/div/div/div")).click();
 				pageUtils.waitForFixedTime(BrowserConstants.WAIT_SMALL_TWO);
+				pageUtils.scrollDownSmall(driver);
 				String startDepTime = driver.findElement(By.xpath("//ul[@id='LIST']/li[" + i
 						+ "]/div/div[2]/div/div[2]/div/div/div/div[2]/div/ul/li/div[2]/span")).getText();
 				pageUtils.waitForFixedTime(BrowserConstants.WAIT_SMALL_TWO);
@@ -615,7 +613,6 @@ public class HomePage {
 				if (startDepTime.equals(FromTime[1])) {
 					System.out.println("SRP PAGE START TIME AND BOOKING SUMMARY PAGE START TIME BOTH ARE MATCHING");
 					status = true;
-
 				} else {
 					System.out.println("SRP PAGE START TIME AND BOOKING SUMMARY PAGE START TIME BOTH ARE NOT MATCHING");
 					Assert.assertTrue("SRP PAGE START TIME AND BOOKING SUMMARY PAGE START TIME BOTH ARE NOT MATCHING",
@@ -653,7 +650,6 @@ public class HomePage {
 						.click();
 				pageUtils.isElementLocated(driver, By.xpath(
 						"(.//*[normalize-space(text()) and normalize-space(.)='Booking Summary'])[1]/following::span[1]"));
-
 				String BookingSummaryCurrency = pageUtils.getTextOfElement(driver, get_Currency_Text);
 				String[] Booking_Summary_Currency = BookingSummaryCurrency.split(" ");
 				System.out.println("Currency:" + Booking_Summary_Currency[0]);
