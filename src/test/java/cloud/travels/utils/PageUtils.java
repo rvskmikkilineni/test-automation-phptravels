@@ -209,11 +209,8 @@ public class PageUtils {
 	 */
 	public String currentData() {
 		Date mDate = new Date();
-
 		DateFormat date = new SimpleDateFormat("d");
-
 		String Date = date.format(mDate);
-
 		return Date;
 	}
 
@@ -223,7 +220,6 @@ public class PageUtils {
 	 * @param driver
 	 */
 	public void scrollDown(WebDriver driver) {
-
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy(0,200)", "");
 	}
@@ -234,7 +230,6 @@ public class PageUtils {
 	 * @param driver
 	 */
 	public void scrollDownSmall(WebDriver driver) {
-
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy(0,50)", "");
 	}

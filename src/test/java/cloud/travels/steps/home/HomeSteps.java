@@ -74,7 +74,7 @@ public class HomeSteps extends StepUtils {
 		homePage.search_ResulsPage();
 	}
 	
-	@When("^I can verify the system is navigated to results page$")
+	@Then("^I can verify the system is navigated to results page$")
 	public void i_can_verify_the_system_is_navigated_to_result_page() throws Throwable {
 		homePage = new HomePage(driver);
 		homePage.navigate_Search_ResulsPage();
@@ -96,57 +96,57 @@ public class HomeSteps extends StepUtils {
 		homePage.clickRoundTrip();
 	}
 
-	@When("^I can check the default class name in Home page and modify search page$")
+	@Then("^I can check the default class name in Home page and modify search page$")
 	public void i_can_check_the_default_class_name_in_homepage_and_modify_search_page(DataTable dataTable) throws Throwable {
 		Map<String, String> dataMap = getDataAsMap(dataTable);
 		homePage = new HomePage(driver);
 		homePage.checkingdefaultClass_ModifySearchPage(dataMap);
 	}
 	
-	@When("^I can check the passengers count in Home page and modify search page$")
+	@Then("^I can check the passengers count in Home page and modify search page$")
 	public void i_can_check_the_passenger_count_in_homepage_and_modify_search_page(DataTable dataTable) throws Throwable {
 		Map<String, String> dataMap = getDataAsMap(dataTable);
 		homePage = new HomePage(driver);
 		homePage.checkingPassengersCount_ModifySearchPage(dataMap);
 	}
 	
-	@When("^I can Check the Start time end time which shows same for the two trips$")
+	@Then("^I can Check the Start time end time which shows same for the two trips$")
 	public void i_can_check_start_time_end_time_shows_same_for_both_trips() throws Throwable {
 		homePage = new HomePage(driver);
 		homePage.selectStopOne_CheckStartTimeAndEndTime();
 	}
 	
-	@When("^I can check the duration which is showing same for both the trips$")
+	@Then("^I can check the duration which is showing same for both the trips$")
 	public void i_can_check_duration_shows_same_for_both_trips() throws Throwable {
 		homePage = new HomePage(driver);
 		homePage.selectStopOne_CheckDurationTrips();
 	}
 
-	@When("^I can check Start time is showing same in Depart from Start location$")
+	@Then("^I can check Start time is showing same in Depart from Start location$")
 	public void i_can_check_start_time_is_showing_in_depart_from_start_locations() throws Throwable {
 		homePage = new HomePage(driver);
 		homePage.selectStopOne_CheckStartTimeShowingDepartFromStartLocations();
 	}
 	
-	@When("^I can verify the from time in SRP page and Booking Summary Page$")
+	@Then("^I can verify the from time in SRP page and Booking Summary Page$")
 	public void i_can_verify_the_from_time_in_Srp_page_and_booking_summary_page() throws Throwable {
 		homePage = new HomePage(driver);
 		homePage.checking_FromTime_BookingSummaryPage();
 	}
 	
-	@When("^I can verify the Currency in SRP page and Booking Summary Page$")
+	@Then("^I can verify the Currency in SRP page and Booking Summary Page$")
 	public void i_can_verify_the_currency_in_Srp_page_and_booking_summary_page() throws Throwable {
 		homePage = new HomePage(driver);
 		homePage.checking_Currency_BookingSummaryPage();
 	}
 	
-	@When("^I can login to the site and navigate to booking summary page and Verify Account Login$")
+	@Then("^I can login to the site and navigate to booking summary page and Verify Account Login$")
 	public void i_can_login_to_the_site_booking_summary_page_and_verify_account_login() throws Throwable {
 		homePage = new HomePage(driver);
 		homePage.verifyAccountLogin();
 	}
 
-	@When("^I can check the payment cards$")
+	@Then("^I can check the payment cards$")
 	public void i_can_check_the_payment_cards() throws Throwable {
 		homePage = new HomePage(driver);
 		homePage.verifyPaymentCards();

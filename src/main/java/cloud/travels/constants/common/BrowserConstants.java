@@ -2,17 +2,10 @@ package cloud.travels.constants.common;
 
 public class BrowserConstants {
 	
-	
-	//Target for Automation
-		public static final String ENG = "ENG";
-		
-	
-	
 	//URL's
-	public static final String PHP_PRD_URL = "https://phptravels.net/";
-
+	public static final String PHP_PRD_URL = "";
 	public static final String PHP_STG_URL = "";
-	public static final String PHP_QA_TST_URL = "";
+	public static final String PHP_QA_TST_URL = "https://phptravels.net/";
 	
 		
 	//Environments for Engine Titles
